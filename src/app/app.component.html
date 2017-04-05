@@ -1,20 +1,22 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Hipstarter</a>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLink="">Hipstarter</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-    </ul>
-  </div>
-</nav>
+  </nav>
 
-<div class="container">
-  <h1>{{title}}</h1>
-  <router-outlet></router-outlet>
-</div>
-
-<footer class="footer">
   <div class="container">
-    <a class="text-muted" routerLink="newform">New Project</a>
+    <h1>{{title}}</h1>
+    <router-outlet></router-outlet>
   </div>
-</footer>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="text-muted" routerLink="newform">New Project</a>
+    </div>
+  </footer>
+</body>
