@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Project } from './project.model';
 import { PROJECTS } from './mock-project';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class ProjectService {
+  projects: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private angularFire: AngularFire) {
+    this.projects = angularFire.database.list('projects');
+  }
 
   getProjects() {
-    return PROJECTS;
+    return this.projects;
   }
 
   getProjectById(projectId: number) {
