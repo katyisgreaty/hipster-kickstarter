@@ -1,8 +1,8 @@
 <div>
-  <h3>{{projectToDisplay.title}}</h3>
-  <h4>{{projectToDisplay.starter}}</h4>
-  <p>{{projectToDisplay.description}}</p>
-  <p>{{projectToDisplay.goal}}</p>
-  <p>{{projectToDisplay.plans}}</p>
-  <p>{{projectToDisplay.swag}}</p>
+  <h1>{{(projectToDisplay | async)?.title}}</h1>
+  <h2>Created by {{(projectToDisplay | async)?.starter}}</h2>
+  <h4>{{(projectToDisplay | async)?.description}}</h4>
+  <h4><em>Our Hipstarter fundraising goal:</em> ${{(projectToDisplay | async)?.goal}}</h4>
+  <h4><em>If you invest and we become fully funded, these are our plans: </em>{{(projectToDisplay | async)?.plans}}</h4>
+  <h4><em>Extra swag:</em> {{(projectToDisplay | async)?.swag}}</h4>
 </div>

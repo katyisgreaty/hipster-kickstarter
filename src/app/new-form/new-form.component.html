@@ -1,0 +1,46 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Project to Hipstarter</h3>
+  </div>
+  <div class="panel-body">
+
+    <h3>Add New Project to Site</h3>
+    <div>
+      <div>
+        <label>Project Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Project Starter:</label>
+        <br>
+        <input #newStarter>
+      </div>
+
+      <div>
+        <label>Project Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+
+      <div>
+        <label>Project Goal:</label>
+        <br>
+        <input type="number" #newGoal>
+      </div>
+
+      <div>
+        <label>Project Plans:</label>
+        <br>
+        <textarea #newPlans></textarea>
+      </div>
+
+      <div>
+        <label>Project Swag:</label>
+        <br>
+        <textarea #newSwag></textarea>
+      </div>
+       <button routerLink="" (click)="submitForm(newTitle.value, newStarter.value, newDescription.value, newGoal.value, newPlans.value, newSwag.value); newTitle.value=''; newStarter.value=''; newDescription.value=''; newGoal.value=''; newPlans.value=''; newSwag.value=''">Add</button>
+    </div>
+  </div>

@@ -9,6 +9,7 @@ import { routing } from './app.routing';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
+import { NewFormComponent } from './new-form/new-form.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,7 +22,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     WelcomeComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    NewFormComponent
   ],
   imports: [
     BrowserModule,
