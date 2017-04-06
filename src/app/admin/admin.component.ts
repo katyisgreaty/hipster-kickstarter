@@ -4,16 +4,14 @@ import { Router } from '@angular/router';
 import { ProjectService } from '../project.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
-
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css'],
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.css'],
   providers: [ProjectService]
 })
-export class WelcomeComponent implements OnInit {
+export class AdminComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
-  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private projectService: ProjectService) {}
 

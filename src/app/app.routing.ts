@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { NewFormComponent } from './new-form/new-form.component';
+import { AdminComponent } from "./admin/admin.component";
 
 const appRoutes: Routes = [
   {
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'newform',
     component: NewFormComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 
