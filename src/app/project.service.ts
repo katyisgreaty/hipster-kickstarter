@@ -32,4 +32,9 @@ export class ProjectService {
                                   swag: localUpdatedProject.swag});
   }
 
+  deleteProject(localProjectToDelete){
+    var projectEntryInFirebase = this.getProjectById(localProjectToDelete.$key);
+    projectEntryInFirebase.remove();
+  }
+
 }

@@ -17,7 +17,7 @@ export class NewFormComponent implements OnInit {
   }
 
   submitForm(title: string, starter: string, description: string, goal: number, plans: string, swag: string) {
-    var newProject: Project = new Project(title, starter, description, goal, plans, swag);
+    var newProject: Project = new Project(title, starter, description, goal, plans, swag, 0);
     this.projectService.addProject(newProject);
   }
 

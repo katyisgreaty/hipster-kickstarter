@@ -5,7 +5,8 @@
     "goal": 10000,
     "plans": "If we raise enough money, we plan to begin production right away. We will use the finest, rarest natural organic ingredients, all gluten-free of course. We will plant cheddar cheese trees all over the world to counter-act our carbon footprint.",
     "swag": "Included: Edible Fannypack in the flavor of your choice. Plus, if you are one of our first 100 investors, we will include our patented szechuan dipping sauce that comes in a convenient wooden flask.",
-    "id": 1
+    "id": 1,
+    "donations": 0
     }, {
     "title": "Moustache Bedazzler",
     "starter": "Matt Caswell",
@@ -13,7 +14,8 @@
     "goal": 1000000,
     "plans": "When our fundraising goal is met, I will use the money to bribe my little sister into letting me use her bedazzler as a model. Don't worry, it's vintage from 1983, so you know it's authentic. I will craft the new machines in my woodshop from recycled materials.",
     "swag": "With each order, you will receive a handcrafted Moustache Bedazzler, plus styling guide and matching bedazzled monacle.",
-    "id": 2
+    "id": 2,
+    "donations": 0
       }, {
     "title": "Gluten Filter",
     "starter": "Joan",
@@ -21,6 +23,7 @@
     "goal": 25000,
     "plans": "I have already made twelve of these in my grandma's basement, so I've pretty much got the manufacturing covered.",
     "swag": "Comes with an artisinal recycled-paper straw.",
-    "id": 3
+    "id": 3,
+    "donations": 0
   }]
 }
