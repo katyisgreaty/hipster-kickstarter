@@ -1,3 +1,7 @@
+html {
+  background-color: #D9ECE3;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -5,8 +9,4 @@
   height: 60px;
   background-color: #f5f5f5;
   padding: 15px;
-}
-
-body {
-  background-color: blue;
 }

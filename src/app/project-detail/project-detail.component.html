@@ -5,4 +5,12 @@
   <h4><em>Our Hipstarter fundraising goal:</em> ${{(projectToDisplay | async)?.goal}}</h4>
   <h4><em>If you invest and we become fully funded, these are our plans: <br> </em>{{(projectToDisplay | async)?.plans}}</h4>
   <h4><em>Extra swag: <br></em> {{(projectToDisplay | async)?.swag}}</h4>
+  <h2>So far, we have raised: ${{(projectToDisplay | async)?.donations}}.00</h2>
+  <hr>
+  <h3>Donate to this Hipstarter campaign!</h3>
+  <button>Donate $20</button>
+  <button>Donate $50</button>
+  <button>Donate $100</button>
+  <button>Donate $500</button>
+  <hr>
 </div>

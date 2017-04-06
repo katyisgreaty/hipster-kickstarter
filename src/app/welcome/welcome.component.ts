@@ -17,8 +17,14 @@ export class WelcomeComponent implements OnInit {
 
   constructor(private router: Router, private projectService: ProjectService) {}
 
+  filterByGoal: string = "allProjects";
+
   ngOnInit() {
     this.projects = this.projectService.getProjects();
+  }
+
+  onChange(optionFromMenu) {
+  this.filterByGoal = optionFromMenu;
   }
 
   goToDetailPage(clickedProject) {

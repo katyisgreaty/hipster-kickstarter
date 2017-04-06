@@ -1,6 +1,12 @@
 <h2>Projects</h2>
 
-<div *ngFor="let project of projects | async" class="panel panel-default">
+<select (change)="onChange($event.target.value)">
+     <option value="allProjects" selected="selected">All Projects</option>
+     <option value="overTwenty">Goal over $20,000</option>
+     <option value="underTwenty">Goal under $20,000</option>
+   </select>
+
+<div *ngFor="let project of projects | async | goalPipe:filterByGoal" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(project)"><em>{{project.title}}</em> started by {{project.starter}}</h3>
     <div *ngIf="currentRoute === '/admin'">

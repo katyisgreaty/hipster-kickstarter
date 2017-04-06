@@ -9,17 +9,19 @@ import { FirebaseListObservable } from 'angularfire2';
 export class GoalPipePipe implements PipeTransform {
 
   // projects: FirebaseListObservable<any[]>;
-  transform(input: Project[]) {
-    console.log("Hi");
-    console.log(input);
+  transform(input: Project[], desiredGoalFilter) {
+    // console.log("Hi");
+    // console.log(input);
     var output: Project[] = [];
-    for (var i = 0; i < input.length; i++) {
-      if (input[i].goal < 14000) {
-        output.push(input[i]);
+    if(desiredGoalFilter === "underTwenty") {
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].goal < 20000) {
+          output.push(input[i]);
+        }
       }
+      return output;
+    } else {
+      return input;
     }
-    return output;
   }
-
-
 }
