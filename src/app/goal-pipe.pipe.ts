@@ -20,6 +20,13 @@ export class GoalPipePipe implements PipeTransform {
         }
       }
       return output;
+    } else if (desiredGoalFilter === "overTwenty") {
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].goal > 20000) {
+          output.push(input[i]);
+        }
+      }
+      return output;
     } else {
       return input;
     }
