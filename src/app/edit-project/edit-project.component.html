@@ -9,16 +9,19 @@
 <br>
 
 <label>New Project Description:</label>
-<input [(ngModel)]="selectedProject.description">
+<textarea  [(ngModel)]="selectedProject.description"></textarea>
+<br>
 
 <label>New Project Goal:</label>
 <input type="number" [(ngModel)]="selectedProject.goal">
 <br>
 
 <label>New Project Plans:</label>
-<input [(ngModel)]="selectedProject.plans">
+<textarea  [(ngModel)]="selectedProject.plans"></textarea>
 <br>
 
 <label>New Project Swag:</label>
-<input [(ngModel)]="selectedProject.swag">
+<textarea [(ngModel)]="selectedProject.swag"></textarea>
 <br>
+
+<button (click)="beginUpdatingProject(selectedProject)">Update</button>

@@ -22,4 +22,14 @@ export class ProjectService {
     return this.angularFire.database.object('projects/' + projectId);
   }
 
+  updateProject(localUpdatedProject) {
+    var projectEntryInFirebase = this.getProjectById(localUpdatedProject.$key);
+    projectEntryInFirebase.update({title: localUpdatedProject.title,
+                                  starter: localUpdatedProject.starter,
+                                  description: localUpdatedProject.description,
+                                  goal: localUpdatedProject.goal,
+                                  plans: localUpdatedProject.plans,
+                                  swag: localUpdatedProject.swag});
+  }
+
 }
